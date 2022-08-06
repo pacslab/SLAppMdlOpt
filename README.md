@@ -1,5 +1,5 @@
 # SLAppMdlOpt
-This is the reproducible repository for the paper "Fine-Grained Performance and Cost Modeling and Optimization for Serverless Applications."
+This is the reproducible repository for the paper "Fine-Grained Performance and Cost Modeling and Optimization for FaaS Applications."
 This repository includes all algorithms, modules, scripts, and experimental results presented in the paper.
 
 ## Overview of the methodology
@@ -92,11 +92,11 @@ The abstract is not available at this moment since this work is currently under 
 ## Citation
 This work is currently under review. Please cite this work as follows:
 
-Changyuan Lin, Nima Mahmoudi, Caixiang Fan and Hamzeh Khazaei, "Fine-Grained Performance and Cost Modeling and Optimization for Serverless Applications"
+Changyuan Lin, Nima Mahmoudi, Caixiang Fan and Hamzeh Khazaei, "Fine-Grained Performance and Cost Modeling and Optimization for FaaS Applications"
 
 ```
 @misc{web:SLAppMdlOpt,
-  title = {Fine-Grained Performance and Cost Modeling and Optimization for Serverless Applications},
+  title = {Fine-Grained Performance and Cost Modeling and Optimization for FaaS Applications},
   year = "2022",
   howpublished = "\url{https://github.com/pacslab/SLAppMdlOpt}",
   note = "[Online]"
