@@ -3,7 +3,7 @@ This is the reproducible repository for the paper "Fine-Grained Performance and 
 This repository includes all algorithms, modules, scripts, and experimental results presented in the paper.
 
 ## Overview of the methodology
-![alt text](appendix/SLAppMdlOpt.png "")
+![alt text](appendix/workflow.png "")
 * Conditional stochastic Petri nets to effectively model concurrency, parallelism, synchronization, randomness, and billing in serverless applications or any software systems with similar patterns.
 * Modeling rules to convert states, actions, and structures in the serverless application into CSPNs.
 * Two ready-to-use Python modules to help define serverless applications with CSPNs and solve the performance/cost trade-off.
