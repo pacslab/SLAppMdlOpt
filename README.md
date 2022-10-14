@@ -16,17 +16,18 @@ This repository includes all algorithms, modules, scripts, and experimental resu
 * [slapptuner](./slapptuner): a Python package to (1) implement the depth-first bottleneck alleviation algorithm and (2) perform fine-grained performance and cost tuning for serverless applications by solving two optimization problems with accurate performance/cost constraints.
 * Scripts for Evaluation and Experimental Results (Section 6)
   * [Performance and Cost Modeling](./modeling) (Section 6.1)
-    * [Sequence](./modeling/Sequence): the serverless application that contains a sequence.
-    * [Parallel](./modeling/Parallel): the serverless application that contains a parallel.
-    * [Choice](./modeling/Choice): the serverless application that contains a choice.
-    * [Map](./modeling/Map): the serverless application that contains a map.
+    * [Sequence](./modeling/Sequence): a serverless application that contains a sequence.
+    * [Parallel](./modeling/Parallel): a serverless application that contains a parallel.
+    * [Choice](./modeling/Choice): a serverless application that contains a choice.
+    * [Map](./modeling/Map): a serverless application that contains a map.
+    * [Choice](./modeling/textprocessing): a serverless application for text processing.
     * [structures](./modeling/structures): scripts for profiling the four functions used to construct the above four applications.
     * [sfn-delay](./modeling/sfn-delay): scripts for analyzing the initialization latency/scheduling overhead incurred by the orchestration service.
     * [AppMdl](./modeling/AppMdl): the serverless application with sixteen functions and four types of structures for evaluating the modeling algorithm (presented in Fig. 8(b)).
     * [Results](./modeling/results): experiment results (Section 6.1.2)
   * [Performance and Cost Optimization](./optimization) (Section 6.2)
     * [profile-functions](./optimization/profile-functions): scripts for obtaining the performance profile of the six functions and the performance profile (presented in Fig. 10).
-    * [App](./optimization/App): the serverless application with six functions and four types of structures for evaluating the optimization algorithm (presented in Fig. 8(a)).
+    * [App](./optimization/App): a serverless application with six functions and four types of structures for evaluating the optimization algorithm (presented in Fig. 8(a)).
     * [DFBA-PRCP](./optimization/DFBA-PRCP): comparison between the DFBA algorithm and the PRCP algorithm.
 
 ## Requirements
@@ -87,21 +88,11 @@ The evaluation results of the DFBA algorithm when solving the BCPC problem. The 
 Comparison between the DFBA algorithm (k = None) and the PRCP algorithm solving the BPBC/BCPC problems. The original data can be found in [this directory](./optimization/DFBA-PRCP/).
 
 ## Abstract
-The abstract is not available at this moment since this work is currently under review.
+Function-as-a-Service (FaaS) has become a mainstream cloud computing paradigm for developers to build cloud-native applications in recent years. By taking advantage of serverless architecture, FaaS applications bring many desirable benefits, including built-in scalability, high availability, and improved cost-effectiveness. However, predictability and trade-off of performance and cost are still key pitfalls for FaaS applications due to poor infrastructure transparency and lack of performance and cost models that fit the new paradigm. In this study, we therefore fill this gap by proposing formal performance and cost modeling and optimization algorithms, which enable accurate prediction and fine-grained control over the performance and cost of FaaS applications. The proposed model and algorithms provide better predictability and trade-off of performance and cost for FaaS applications, which help developers to make informed decisions on cost reduction, performance improvement, and configuration optimization. We validate the proposed model and algorithms via extensive experiments on AWS. We show that the modeling algorithms can accurately estimate critical metrics, including response time, cost, exit status, and their distributions, regardless of the complexity and scale of the application workflow. Also, the depth-first bottleneck alleviation algorithm for trade-off analysis can effectively solve two optimization problems with fine-grained constraints.
+
 
 ## Citation
-This work is currently under review. Please cite this work as follows:
-
-Changyuan Lin, Nima Mahmoudi, Caixiang Fan and Hamzeh Khazaei, "Fine-Grained Performance and Cost Modeling and Optimization for FaaS Applications"
-
-```
-@misc{web:SLAppMdlOpt,
-  title = {Fine-Grained Performance and Cost Modeling and Optimization for FaaS Applications},
-  year = "2022",
-  howpublished = "\url{https://github.com/pacslab/SLAppMdlOpt}",
-  note = "[Online]"
-}
-```
+Please refer to [https://doi.org/10.1109/TPDS.2022.3214783](https://doi.org/10.1109/TPDS.2022.3214783)
 
 ## License
 This artifact repository is licensed under the MIT license. Please refer to the [LICENSE](LICENSE) file for details.
